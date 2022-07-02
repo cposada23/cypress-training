@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
+    "cy:open": "cypress open --browser chrome --e2e",
     "test:open": "npm run lint && cypress open",
     "lint": "eslint ./cypress/integration/**/*.ts",
     "lint:fix": "npm run lint -- --fix"
@@ -18,7 +19,7 @@
   "author": "Camilo Posada <cposadaa@gmail.com> <cposada23>",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.6.1"
+    "cypress": "^10.0.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.27.0",
