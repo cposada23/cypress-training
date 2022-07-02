@@ -1,0 +1,11 @@
+# workspace and env config
+.vscode
+
+# tsconfig
+**/tsconfig.*
+
+# builds
+**/dist
+**/storybook-static
+**/coverage
+**/build

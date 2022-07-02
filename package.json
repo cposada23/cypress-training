@@ -4,12 +4,30 @@
   "description": "This is a Workshop about Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress run",
+    "cy:open": "cypress open --browser chrome --e2e",
+    "test:open": "lint && cypress open",
+    "lint": "eslint ./cypress/e2e/**/*.ts",
+    "lint:fix": "yarn lint -- --fix"
   },
-  "keywords": ["ui-testing", "dojo", "practice", "cypress"],
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "cypress"
+  ],
   "author": "Camilo Posada <cposadaa@gmail.com> <cposada23>",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.6.1"
+    "cypress": "^10.0.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "prettier": "2.6.2",
+    "typescript": "^4.7.2"
   }
 }
