@@ -19,6 +19,5 @@ module.exports = {
     'no-unused-vars': 'warn',
     'require-jsdoc': 'warn',
     'max-len': ['error', { code: 120 }],
-    'object-curly-spacing': true,
   },
 };
