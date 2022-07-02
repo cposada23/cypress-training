@@ -13,13 +13,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16
-          cache: 'npm'
+          cache: 'yarn'
 
       - name: Install
-        run: npm ci
+        run: yarn ci
 
       - name: Code style
-        run: npm run lint
+        run: yarn lint
 
       - name: UI E2E Tests
         uses: cypress-io/github-action@v2
