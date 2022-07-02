@@ -1,3 +1,5 @@
+/* eslint-disable object-curly-spacing */
+/* eslint-disable quote-props */
 module.exports = {
   env: {
     browser: true,
